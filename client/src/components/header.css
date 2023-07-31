@@ -1,0 +1,116 @@
+.head1{
+    display: flex;
+    background-color: black;
+    height: 8vh;
+    padding-top:1.5vh ;
+    /* width: 100vw; */
+    color: aliceblue;
+    font-size: 1.8rem;
+    font-weight: bolder;
+  
+    /* transition:ease; */
+    
+  }
+  .head1 a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .headimg{
+    width: 6vw;
+    margin-left: 2vw;
+  
+  } 
+  .eravanhead{
+    width: 20vw; 
+    transition: width 2s linear 0.2s;
+    transition-timing-function: ease;
+    /* color: red; */
+  }
+  .phone{
+  width: 20vw;
+  transition-timing-function: ease;
+  }
+  /* .phone:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    text-align: center;
+    transition-timing-function: ease;
+  } */
+  .mail{
+    width: 25vw;
+  
+  }
+  .mailshow{
+    color:rgb(255, 255, 255);
+    margin-top: 100vh;
+    font-size: 1.85rem;
+  
+  }
+  .place{
+    width: 30vw;
+  }
+  .head2{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    height: 8vh;
+    padding-top:1.5vh ;
+    /* width: 100vw; */
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    padding-left:1vw;
+    overflow: hidden;
+  }
+  .head2 a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  .head2headings1{
+    width: 10vw;
+    transition: width 2s linear 0.2s;
+    transition-timing-function: ease;
+  }
+  .head2headings{
+    width: 16vw;
+    transition: width 2s linear 0.2s;
+    transition-timing-function: ease;
+  }
+  .head2headings2{
+    width: 20vw;
+    transition: width 2s linear 0.2s;
+    transition-timing-function: ease;
+  }
+  .head2headings5{
+    width: 12vw;
+    transition: width 2s linear 0.2s;
+    transition-timing-function: ease;
+  }
+  .head2headings1:hover{
+    /* width: 17vw; */
+    color: black;
+    background-color: #BDF0C0;
+    border-radius: 20px;
+  
+  }
+  .head2headings:hover{
+    /* width: 18vw; */
+    color: black;
+    background-color: #BDF0C0;
+    border-radius: 20px;
+  
+  }
+  .head2headings2:hover{
+    /* width: 22vw; */
+    color: black;
+    background-color: #BDF0C0;
+    border-radius: 20px;
+  
+  }
+  .head2headings5:hover{
+    width: 14vw;
+    color: black;
+    background-color: #BDF0C0;
+    border-radius: 20px;
+  }
