@@ -7,7 +7,7 @@
     color: aliceblue;
     font-size: 1.8rem;
     font-weight: bolder;
-  
+    width: 100vw;
     /* transition:ease; */
     
   }
@@ -55,13 +55,14 @@
     background-color: rgb(255, 255, 255);
     height: 8vh;
     padding-top:1.5vh ;
-    /* width: 100vw; */
+    width: 100vw;
     color: rgb(0, 0, 0);
     font-size: 1.5rem;
     font-weight: bolder;
     text-align: center;
     padding-left:1vw;
     overflow: hidden;
+
   }
   .head2 a{
     color: rgb(0, 0, 0);
@@ -113,4 +114,66 @@
     color: black;
     background-color: #BDF0C0;
     border-radius: 20px;
+  }
+  .head2 button{
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0.5px;
+    font-size: large;
+    font-weight: bold;
+  }
+  .head2 button:hover{
+    background-color: #bdf0c0;
+  }
+  .sub-menu-wrap{
+    position:absolute;
+    top: 13%;
+    right: 6%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;    
+    transition: max-height 0.5s;
+  }
+  .sub-menu-wrap.open-menu{
+    max-height: 400px;
+  }
+  .sub-menu{
+    background: #bdf0c0;
+    padding: 25px;
+    margin: 15px;
+  }
+  .user-info{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+  }
+  .user-info h3{
+    font-weight: 500;
+  }
+  .sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background : #000;
+    margin: 15px 0 10px;
+  }
+  .sub-menu-link{
+    display: flex;
+    align-items: center;
+    /* color: #525252; */
+    margin: 12px 0;
+  }
+  .sub-menu-link p{
+    width: 100%;
+    font-size: large;
+  }
+  .sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+  }
+  .sub-menu-link:hover span{
+    transform: translateX(5px);
+  }
+  .sub-menu-link:hover p{
+    font-weight: 600px;
   }

@@ -1,21 +1,25 @@
 import React , { useState } from "react";
 import axios from "axios";
 import "./Login.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Login(){
 
     const [email , setEmail] = useState("");
     const [password , setPassword] = useState("");
     const [message , setMessage] = useState("");
+    const navigate = useNavigate();
 
     const handleLogin = async (e) => {
+        e.preventDefault();
         try{
             await axios.post('http://localhost:5000/login' , {email , password})
             .then((response) => {
                 console.log(response.data);
                 setMessage(response.data.message);
                 localStorage.setItem("token" , response.data.token);
-                e.target.reset();
+                // e.target.reset();
+                navigate("/");
             })
         }catch(err){
             setMessage("Invalid username or password");
@@ -54,7 +58,7 @@ export default function Login(){
                         </div>
                         <div class="links-login">
                             <a href="#">Forgot Password ?</a>
-                            <a href="#">SignUp</a>
+                            <a href="/register">SignUp</a>
                         </div>
                         <div class="submit">
                             <button type="submit" >LOGIN</button>

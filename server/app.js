@@ -67,7 +67,7 @@ app.post('/register', async (req, res) => {
 // Login route
 app.post('/login', async (req, res) => {
   const { email, password } = req.body;
-  console.log(req.body);
+  // console.log(req.body);
 
   try {
     const user = await User.findOne({ email });
@@ -81,15 +81,16 @@ app.post('/login', async (req, res) => {
     }
     console.log("LOgin done");
     const token = jwt.sign({ id: user._id }, secretKey, { expiresIn: '1h' });
-     console.log(token);
+    //  console.log(token);
     res.json({ token });
   } catch (error) {
     res.status(500).json({ error: 'An error occurred' });
   }
 });
 
-app.post("/getuserbyid",async (req,res)=>{
-    const {id} = req.body;
+app.get("/getuserbyid/:id",async (req,res)=>{
+  // console.log('first')
+    const {id} = req.params;
     try {
     const user =  await User.findById(id);
     user.password = null;
