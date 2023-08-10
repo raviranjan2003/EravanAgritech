@@ -59,7 +59,7 @@ function Header() {
             </div>
             <div class="head2">
                 <div className="head2headings1"><a href="/">HOME</a></div>
-                <div className="head2headings2"><a href="/akshayapatra">GET AKSHAY-PATRA</a></div>
+                <div className="head2headings2"><a href="/akshyapatra">GET AKSHAY-PATRA</a></div>
                 <div className="head2headings"><a href="/margdarshak">MARG-DARSHAK </a></div>
                 <div className="head2headings"><a href="/marketplace">MARKET-PLACE</a></div>
                 <div className="head2headings"><a href="/pricetrend">PRICE TREND</a></div>

@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    background: #fff;
+}
+.box{
+    position: relative;
+    width: 380px;
+    height: 670px;
+    margin-top: 80px;
+    background: #e9f3dd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.box-login{
+    position: relative;
+    width: 380px;
+    height: 400px;
+    margin-top: 80px;
+    background: #e9f3dd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.form{
+    position: absolute;
+    inset: 2px;
+    border-radius: 8px;
+    background: #e1e6db;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.form h2{
+    color: #244104;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.inputBox{
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+.inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: #244104;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.90em;
+}
+.inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* height: 2px; */
+    background: #fff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i{
+    height: 44px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.links a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+.links a:hover,
+.links a:nth-child(2)
+{
+    color: #4e7126;
+}
+.links-login{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.links-login a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+.links-login a:hover,
+.links-login a:nth-child(2)
+{
+    color: #4e7126;
+}
+input[type="submit"]{
+    border: none;
+    outline: none;
+    background: #4e7126;
+    padding: 11px 12px;
+    width: 100px;
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 1em;
+}
+input[type="submit"]:active{
+        opacity: 0.5;
+}
+.submit{
+    margin-top: 20px;
+}
+#buy{
+    margin-top: 23px;
+}
+#buy:hover{
+    cursor: pointer;
+}
+#sell{
+    margin-top: 23px;
+}
+#sell:hover{
+    cursor: pointer;
+}
+select{
+    margin-top: 10px;
+}
+button{
+    margin-top: 10px;
+}

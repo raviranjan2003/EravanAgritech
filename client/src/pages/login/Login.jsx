@@ -57,7 +57,7 @@ export default function Login(){
                             <i></i>
                         </div>
                         <div class="links-login">
-                            <a href="#">Forgot Password ?</a>
+                            <a href="/adminlogin">Login as Admin</a>
                             <a href="/register">SignUp</a>
                         </div>
                         <div class="submit">

@@ -1,0 +1,10 @@
+.parent{
+    display: flex;
+}
+.container{
+    border:1px solid red;
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
