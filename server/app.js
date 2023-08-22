@@ -196,6 +196,32 @@ app.post("/buy",(req,res)=>{
   }
 })
 
+app.post("/adminpanel", (req,res) => {
+  const type = req.body.type;
+  // console.log(type);
+  if(type === "Buyer"){
+    Buyer.find()
+    .then((users) => {
+      // console.log(users);
+       return res.status(200).json({ users });
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
+  }else if(type === "Seller"){
+    Seller.find()
+    .then((users) => {
+      // console.log(users);
+      return res.status(200).json({ users });
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
+  }else{
+    console.log("Akshyapatra clicked");
+  }
+})
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
